@@ -64,11 +64,10 @@ You can clone this repository and open the project with STM32CubeIDE to view thi
 
 5. Add the necessary SOES files into the STM project
 
-   ```jsx
-   git clone https://github.com/OpenEtherCATsociety/SOES.git
-   ```
-
    1. Clone the repository
+      ```jsx
+      git clone https://github.com/OpenEtherCATsociety/SOES.git
+      ```
    2. Copy the header files into inc and c files into src
    3. Add these into the main.c
 
@@ -163,3 +162,4 @@ EtherCAT® is a registered trademark and patented technology, licensed by **Beck
 All source code, documentation, and examples provided here are for **educational and experimental purposes only**. Users are responsible for ensuring compliance with any relevant licensing, safety, or certification requirements when deploying EtherCAT-based systems in commercial or production environments.
 
 Special thanks to the developers and maintainers of the SOES project and to the wider open-source EtherCAT community for their contributions and resources that made this learning project possible.
+
