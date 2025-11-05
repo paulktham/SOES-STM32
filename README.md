@@ -2,6 +2,8 @@
 
 This repository aims to help beginners to EtherCAT like myself to be able to implement a EtherCAT slave using Simple Open Source EtherCAT Slave (SOES). The EtherCAT Slave Controller (ESC) used in this example is a LAN9252 by MicroChip, the microcontroller used is a STM32F446RET6. This guide assumes basic knowledge of working with a microcontroller.
 
+You can clone this repository and open the project with STM32CubeIDE to view this project better.
+
 ## How to implement a EtherCAT slave (SOES)
 
 1. Go to [EEPROM Generator](https://kubabuda.github.io/EEPROM_generator/)
