@@ -1,6 +1,6 @@
 ## Introduction
 
-This repository aims to help beginners to EtherCAT like myself to be able to implement a EtherCAT slave using Simple Open Source EtherCAT Slave (SOES). The EtherCAT Slave Controller (ESC) used in this example is a LAN9252 by MicroChip, the microcontroller used is a STM32F446RET6.
+This repository aims to help beginners to EtherCAT like myself to be able to implement a EtherCAT slave using Simple Open Source EtherCAT Slave (SOES). The EtherCAT Slave Controller (ESC) used in this example is a LAN9252 by MicroChip, the microcontroller used is a STM32F446RET6. This guide assumes basic knowledge of working with a microcontroller.
 
 ## How to implement a EtherCAT slave (SOES)
 
@@ -16,14 +16,8 @@ This repository aims to help beginners to EtherCAT like myself to be able to imp
    3. Click on File → Open then select the .xml file created by the EEPROM Generator
    4. click on Slaves → Program Selected to upload the esi to the eeprom
 
-   <aside>
-   💡
-
-   **Alternative Option:**
-
-   If you do not have access to the EtherCAT Technology Group’s **Slave Stack Code (SSC)**, you can also use **Beckhoff TwinCAT** as an alternative tool for generating and programming the ESI/EEPROM files. While the workflow and interface may differ slightly, many developers have reported success using TwinCAT for configuring and flashing EtherCAT slaves.
-
-   </aside>
+   > **Alternative Option:**
+   > If you do not have access to the EtherCAT Technology Group’s **Slave Stack Code (SSC)**, you can also use **Beckhoff TwinCAT** as an alternative tool for generating and programming the ESI/EEPROM files. While the workflow and interface may differ slightly, many developers have reported success using TwinCAT for configuring and flashing EtherCAT slaves.
 
 3. Create a STM32 Project configured for the chip at hand (SPI comms)
 4. Write helper functions for reading the ESC chip registers, directly and indirectly (read datasheet to understand the requirements for each chip)
@@ -43,10 +37,7 @@ This repository aims to help beginners to EtherCAT like myself to be able to imp
    void ESC_interrupt_disable(uint32_t mask);
    ```
 
-   <aside>
-   🚧
-
-   **For my implementation for reading registers it was kind of weird, because I needed to rearrange the bytes received in a weird manner for it to read data properly**
+   > **For my implementation for reading registers it was kind of weird, because I needed to rearrange the bytes received in a weird manner for it to read data properly**
 
    ```jsx
    uint32_t LAN9252_ReadReg32(uint16_t address)
@@ -68,8 +59,6 @@ This repository aims to help beginners to EtherCAT like myself to be able to imp
        return (recv[2] << 24) | (recv[1] << 16) | (recv[0] << 8) | recv[3];
    }
    ```
-
-   </aside>
 
 5. Add the necessary SOES files into the STM project
 
@@ -158,6 +147,10 @@ This repository aims to help beginners to EtherCAT like myself to be able to imp
       > This was just how I solved the error I was facing where the slave was unable to change its operating state. I am sure there are many other methods to solve the same issue
 
 6. Build the STM project and flash in onto the chip, make sure that the chip is wired correctly to the ESC board
+
+## Contributions
+
+Feel free to contribute by creating PRs :)
 
 ## Acknowledgements & Disclaimer
 
