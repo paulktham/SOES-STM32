@@ -1,0 +1,11 @@
+../Core/Src/esc_foe.c:53:17:FOE_fopen	11
+../Core/Src/esc_foe.c:147:17:FOE_fwrite	6
+../Core/Src/esc_foe.c:187:17:FOE_fclose	1
+../Core/Src/esc_foe.c:203:6:FOE_init	1
+../Core/Src/esc_foe.c:217:13:FOE_abort	3
+../Core/Src/esc_foe.c:283:17:FOE_send_ack	2
+../Core/Src/esc_foe.c:393:13:FOE_write	4
+../Core/Src/esc_foe.c:435:13:FOE_data	11
+../Core/Src/esc_foe.c:535:13:FOE_error	1
+../Core/Src/esc_foe.c:547:6:FOE_config	1
+../Core/Src/esc_foe.c:557:6:ESC_foeprocess	11

@@ -1,0 +1,9 @@
+../Core/Src/main.c:109:9:LAN9252_WaitForInit	3
+../Core/Src/main.c:130:6:cb_get_inputs	2
+../Core/Src/main.c:143:6:cb_set_outputs	5
+../Core/Src/main.c:177:6:LED_Process	3
+../Core/Src/main.c:198:5:main	1
+../Core/Src/main.c:255:6:SystemClock_Config	3
+../Core/Src/main.c:297:13:MX_SPI1_Init	2
+../Core/Src/main.c:335:13:MX_GPIO_Init	1
+../Core/Src/main.c:380:6:Error_Handler	1

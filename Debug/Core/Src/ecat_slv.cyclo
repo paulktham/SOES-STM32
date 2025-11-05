@@ -1,0 +1,13 @@
+../Core/Src/ecat_slv.c:43:10:ESC_download_pre_objecthandler	10
+../Core/Src/ecat_slv.c:80:10:ESC_download_post_objecthandler	2
+../Core/Src/ecat_slv.c:96:10:ESC_upload_pre_objecthandler	2
+../Core/Src/ecat_slv.c:121:10:ESC_upload_post_objecthandler	2
+../Core/Src/ecat_slv.c:134:6:APP_safeoutput	2
+../Core/Src/ecat_slv.c:146:6:TXPDO_update	2
+../Core/Src/ecat_slv.c:164:6:RXPDO_update	2
+../Core/Src/ecat_slv.c:185:6:APP_setwatchdog	1
+../Core/Src/ecat_slv.c:194:6:DIG_process	15
+../Core/Src/ecat_slv.c:261:6:ecat_slv_worker	5
+../Core/Src/ecat_slv.c:303:6:ecat_slv_poll	4
+../Core/Src/ecat_slv.c:349:6:ecat_slv	1
+../Core/Src/ecat_slv.c:359:6:ecat_slv_init	2

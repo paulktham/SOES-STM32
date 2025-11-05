@@ -1,0 +1,11 @@
+../Core/Src/esc_hw.c:5:10:LAN9252_ReadReg32	1
+../Core/Src/esc_hw.c:25:6:LAN9252_WriteInternal	2
+../Core/Src/esc_hw.c:45:6:LAN9252_Reset	1
+../Core/Src/esc_hw.c:53:9:LAN9252_CSR_WaitReady	3
+../Core/Src/esc_hw.c:64:10:LAN9252_ReadESC	7
+../Core/Src/esc_hw.c:95:9:LAN9252_WriteESC	6
+../Core/Src/esc_hw.c:121:6:ESC_init	1
+../Core/Src/esc_hw.c:142:6:ESC_read	6
+../Core/Src/esc_hw.c:178:6:ESC_write	6
+../Core/Src/esc_hw.c:214:6:ESC_interrupt_enable	1
+../Core/Src/esc_hw.c:227:6:ESC_interrupt_disable	1
