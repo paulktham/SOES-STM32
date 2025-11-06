@@ -4,6 +4,8 @@ This repository aims to help beginners to EtherCAT like myself to be able to imp
 
 You can clone this repository and open the project with STM32CubeIDE to view this project better.
 
+Please just use my code as a reference as our PDOs are very likely to be different and will cause differing results. The code is just to give a general idea of how things are meant to flow.
+
 ## How to implement a EtherCAT slave (SOES)
 
 1. Go to [EEPROM Generator](https://kubabuda.github.io/EEPROM_generator/)
@@ -113,7 +115,7 @@ You can clone this repository and open the project with STM32CubeIDE to view thi
       }
       ```
 
-   4. **_IMPORTANT INCLUSION_** in ecat_slv.c/cpp
+   4. **_IMPORTANT INCLUSION_** in ecat_slv.c
 
       ```jsx
       void ecat_slv_poll (void)
@@ -162,4 +164,5 @@ EtherCAT® is a registered trademark and patented technology, licensed by **Beck
 All source code, documentation, and examples provided here are for **educational and experimental purposes only**. Users are responsible for ensuring compliance with any relevant licensing, safety, or certification requirements when deploying EtherCAT-based systems in commercial or production environments.
 
 Special thanks to the developers and maintainers of the SOES project and to the wider open-source EtherCAT community for their contributions and resources that made this learning project possible.
+
 
